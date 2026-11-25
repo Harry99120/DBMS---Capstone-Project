@@ -1,0 +1,58 @@
+{
+  "artifact_status": "DEMO_ONLY_NOT_CONNECTED",
+  "purpose": "Presentation mock of a REST API layer for NEXORA",
+  "base_url": "https://demo.invalid/api/v1",
+  "note": "The .invalid domain is intentionally non-routable. This specification is not a working API.",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/products",
+      "purpose": "List catalogue products"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{productId}",
+      "purpose": "Fetch one product"
+    },
+    {
+      "method": "POST",
+      "path": "/products",
+      "purpose": "Create a product"
+    },
+    {
+      "method": "PUT",
+      "path": "/products/{productId}",
+      "purpose": "Update a product"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{productId}",
+      "purpose": "Delete a product"
+    },
+    {
+      "method": "GET",
+      "path": "/users/{userId}",
+      "purpose": "Fetch customer profile"
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "purpose": "Create an order"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{orderId}",
+      "purpose": "Fetch order and status"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{orderId}/items",
+      "purpose": "Create order item"
+    },
+    {
+      "method": "PATCH",
+      "path": "/products/{productId}/inventory",
+      "purpose": "Adjust inventory"
+    }
+  ]
+}

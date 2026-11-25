@@ -1,0 +1,263 @@
+{
+  "Categories": [
+    {
+      "id": "C001",
+      "name": "Laptops"
+    },
+    {
+      "id": "C002",
+      "name": "Smartphones"
+    },
+    {
+      "id": "C003",
+      "name": "Audio"
+    },
+    {
+      "id": "C004",
+      "name": "Wearables"
+    },
+    {
+      "id": "C005",
+      "name": "Cameras"
+    }
+  ],
+  "Products": [
+    {
+      "id": "P1001",
+      "name": "MacBook Air M3",
+      "brand": "Apple",
+      "category": "Laptops",
+      "categoryId": "C001",
+      "price": 99999,
+      "discount": 12,
+      "stock": 18,
+      "rating": 4.9,
+      "featured": true,
+      "img": "https://images.unsplash.com/photo-1517336714739-489689fd1ca8?auto=format&fit=crop&w=1200&q=85",
+      "description": "A thin, powerful laptop designed for work, creation and everyday performance.",
+      "shortDescription": "Lightweight performance with all-day capability."
+    },
+    {
+      "id": "P1002",
+      "name": "Galaxy S25 Ultra",
+      "brand": "Samsung",
+      "category": "Smartphones",
+      "categoryId": "C002",
+      "price": 129999,
+      "discount": 8,
+      "stock": 11,
+      "rating": 4.8,
+      "featured": true,
+      "img": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=85",
+      "description": "A premium smartphone with a high-resolution display, powerful camera system and flagship performance.",
+      "shortDescription": "Flagship performance in a refined form."
+    },
+    {
+      "id": "P1003",
+      "name": "WH-1000XM6",
+      "brand": "Sony",
+      "category": "Audio",
+      "categoryId": "C003",
+      "price": 34999,
+      "discount": 10,
+      "stock": 7,
+      "rating": 4.8,
+      "featured": true,
+      "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=85",
+      "description": "Premium wireless headphones engineered for immersive listening and focused work.",
+      "shortDescription": "Immersive sound. Serious noise control."
+    },
+    {
+      "id": "P1004",
+      "name": "Apple Watch Series 10",
+      "brand": "Apple",
+      "category": "Wearables",
+      "categoryId": "C004",
+      "price": 46999,
+      "discount": 7,
+      "stock": 24,
+      "rating": 4.7,
+      "featured": true,
+      "img": "https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=1200&q=85",
+      "description": "A connected wearable built around health, communication and everyday convenience.",
+      "shortDescription": "Your day, intelligently connected."
+    },
+    {
+      "id": "P1005",
+      "name": "iPad Pro M5",
+      "brand": "Apple",
+      "category": "Laptops",
+      "categoryId": "C001",
+      "price": 119999,
+      "discount": 9,
+      "stock": 9,
+      "rating": 4.9,
+      "featured": true,
+      "img": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=85",
+      "description": "A powerful tablet experience for creators, students and professionals.",
+      "shortDescription": "Desktop-class ambition in a tablet."
+    },
+    {
+      "id": "P1006",
+      "name": "Alpha A6700",
+      "brand": "Sony",
+      "category": "Cameras",
+      "categoryId": "C005",
+      "price": 124990,
+      "discount": 6,
+      "stock": 5,
+      "rating": 4.8,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=85",
+      "description": "A compact mirrorless camera built for detailed stills and cinematic video.",
+      "shortDescription": "Capture detail. Create with intent."
+    },
+    {
+      "id": "P1007",
+      "name": "Pixel Pro",
+      "brand": "Google",
+      "category": "Smartphones",
+      "categoryId": "C002",
+      "price": 89999,
+      "discount": 11,
+      "stock": 16,
+      "rating": 4.6,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1200&q=85",
+      "description": "A clean Android experience with advanced computational photography.",
+      "shortDescription": "Clean software. Brilliant photography."
+    },
+    {
+      "id": "P1008",
+      "name": "QuietComfort Ultra",
+      "brand": "Bose",
+      "category": "Audio",
+      "categoryId": "C003",
+      "price": 37999,
+      "discount": 5,
+      "stock": 13,
+      "rating": 4.7,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&q=85",
+      "description": "Comfort-focused wireless audio with deep noise cancellation.",
+      "shortDescription": "Quiet spaces, wherever you are."
+    },
+    {
+      "id": "P1009",
+      "name": "Watch GT Pro",
+      "brand": "Huawei",
+      "category": "Wearables",
+      "categoryId": "C004",
+      "price": 27999,
+      "discount": 15,
+      "stock": 4,
+      "rating": 4.5,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=85",
+      "description": "A premium wearable with a bright display and long battery life.",
+      "shortDescription": "Minimal design. Maximum everyday utility."
+    },
+    {
+      "id": "P1010",
+      "name": "XPS 14",
+      "brand": "Dell",
+      "category": "Laptops",
+      "categoryId": "C001",
+      "price": 139990,
+      "discount": 10,
+      "stock": 6,
+      "rating": 4.7,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=85",
+      "description": "A refined performance laptop for demanding workflows.",
+      "shortDescription": "Serious power in a precise chassis."
+    },
+    {
+      "id": "P1011",
+      "name": "MX Master 3S",
+      "brand": "Logitech",
+      "category": "Audio",
+      "categoryId": "C003",
+      "price": 8999,
+      "discount": 18,
+      "stock": 32,
+      "rating": 4.6,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=1200&q=85",
+      "description": "A precision wireless mouse designed for productive workflows.",
+      "shortDescription": "Precision control for long workdays."
+    },
+    {
+      "id": "P1012",
+      "name": "Nothing Phone Pro",
+      "brand": "Nothing",
+      "category": "Smartphones",
+      "categoryId": "C002",
+      "price": 54999,
+      "discount": 14,
+      "stock": 21,
+      "rating": 4.5,
+      "featured": false,
+      "img": "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1200&q=85",
+      "description": "A distinctive smartphone focused on clean design and a smooth user experience.",
+      "shortDescription": "Different by design."
+    }
+  ],
+  "Admin": [
+    {
+      "id": "A001",
+      "name": "Nexora Admin",
+      "email": "admin@nexora.com",
+      "password": "Admin@123",
+      "role": "admin"
+    }
+  ],
+  "Users": [
+    {
+      "id": "U001",
+      "name": "Virat Dagar",
+      "email": "virat@nexora.com",
+      "password": "User@123",
+      "role": "customer",
+      "createdAt": "2026-11-22T00:00:00.000Z"
+    },
+    {
+      "id": "U002",
+      "name": "Demo Customer",
+      "email": "customer@nexora.com",
+      "password": "Customer@123",
+      "role": "customer",
+      "createdAt": "2026-11-20T00:00:00.000Z"
+    }
+  ],
+  "Carts": [],
+  "Orders": [
+    {
+      "id": "O1001",
+      "userId": "U002",
+      "cartId": "C1001",
+      "cartItems": [
+        {
+          "productId": "P1003",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 34999,
+      "status": "Delivered",
+      "createdAt": "2026-11-18T10:30:00.000Z"
+    }
+  ],
+  "Wishlist": [],
+  "CartItems": [],
+  "OrderItems": [
+    {
+      "id": "OI1001",
+      "orderId": "O1001",
+      "userId": "U002",
+      "productId": "P1003",
+      "quantity": 1,
+      "unitPrice": 34999,
+      "discount": 10
+    }
+  ]
+}

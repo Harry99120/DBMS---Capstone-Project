@@ -1,0 +1,15 @@
+import axios from 'axios';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import API_URL from '../api/client';
+import './adminProduct.css';
+
+const AdminProduct = () => {
+  const [products,setProducts]=useState([]); const [orders,setOrders]=useState([]); const [users,setUsers]=useState([]); const [query,setQuery]=useState(''); const navigate=useNavigate();
+  useEffect(()=>{Promise.all([axios.get(`${API_URL}/Products`),axios.get(`${API_URL}/Orders`),axios.get(`${API_URL}/Users`)]).then(([p,o,u])=>{setProducts(p.data);setOrders(o.data);setUsers(u.data)}).catch(console.error)},[]);
+  const filtered=useMemo(()=>products.filter(p=>`${p.name} ${p.brand} ${p.category}`.toLowerCase().includes(query.toLowerCase())),[products,query]);
+  const revenue=orders.reduce((s,o)=>s+Number(o.totalPrice||0),0);
+  const del=async id=>{if(!window.confirm('Delete this product?'))return;await axios.delete(`${API_URL}/Products/${id}`);setProducts(p=>p.filter(x=>x.id!==id));};
+  return <div className="admin-page"><div className="admin-top"><div><span className="eyebrow">NEXORA / CONTROL CENTER</span><h1>Commerce command.</h1><p>Manage catalogue data, inventory and order records from one database-connected workspace.</p></div><button className="admin-logout" onClick={()=>{sessionStorage.clear();navigate('/')}}>Sign out ↪</button></div><div className="metric-grid"><div><span>CATALOGUE</span><strong>{products.length}</strong><small>products</small></div><div><span>CUSTOMERS</span><strong>{users.length}</strong><small>registered users</small></div><div><span>ORDERS</span><strong>{orders.length}</strong><small>order records</small></div><div><span>REVENUE</span><strong>₹{revenue.toLocaleString('en-IN')}</strong><small>recorded orders</small></div></div><div className="admin-body"><div className="admin-toolbar"><div><span className="eyebrow">PRODUCT TABLE</span><h2>Inventory management</h2></div><div className="admin-tools"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search catalogue..."/><Link to="/addProduct" className="add-product">＋ Add product</Link></div></div><div className="db-callout"><div><span>DATABASE LAYER</span><strong>Products → CRUD API → persistent record</strong></div><span>SELECT • INSERT • UPDATE • DELETE</span></div><div className="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Rating</th><th>Actions</th></tr></thead><tbody>{filtered.map(p=><tr key={p.id}><td><div className="admin-product"><img src={p.img} alt=""/><div><strong>{p.name}</strong><span>{p.brand} • {p.id}</span></div></div></td><td>{p.category||'—'}</td><td>₹{Number(p.price).toLocaleString('en-IN')}</td><td><span className={Number(p.stock)<6?'stock-alert':'stock-ok'}>{p.stock ?? '—'}</span></td><td>★ {p.rating||'—'}</td><td><Link to={`/editProduct/${p.id}`}>Edit</Link><button onClick={()=>del(p.id)}>Delete</button></td></tr>)}</tbody></table></div></div></div>;
+};
+export default AdminProduct;

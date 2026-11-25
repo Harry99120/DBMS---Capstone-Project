@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nexora-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npx json-server --host 0.0.0.0 --watch src/api/db.json --port $PORT
+    envVars:
+      - key: NODE_VERSION
+        value: 20
