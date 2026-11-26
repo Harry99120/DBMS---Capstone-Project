@@ -1,7 +1,4 @@
--- NEXORA DBMS DEMONSTRATION ARTIFACT
--- STATUS: DEMO / NON-PRODUCTION
--- This file is intentionally standalone and is NOT connected to the React app.
--- It models a PostgreSQL-style relational design for presentation/academic demonstration.
+
 
 CREATE TABLE categories (
     category_id VARCHAR(10) PRIMARY KEY,
